@@ -114,10 +114,10 @@
             const AmountNumber = parseFloat(Amount);
             return AmountNumber;
         }
-        function updateSpanText(id, depositNumber) {
+        function updateSpanText(id, addedNumber) {
             const current = document.getElementById(id).innerText;
             const currentNumber = parseFloat(current);
-            const totalBalance = currentNumber + depositNumber;
+            const totalBalance = currentNumber + addedNumber;
             document.getElementById(id).innerText = totalBalance;
 
         }
